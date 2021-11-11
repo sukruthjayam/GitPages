@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -12,15 +10,14 @@
 <body>
 
 <div class="container">
-  <h2>Pill Badges</h2>
-  <span class="badge badge-pill badge-primary">Primary</span>
-  <span class="badge badge-pill badge-secondary">Secondary</span>
-  <span class="badge badge-pill badge-success">Success</span>
-  <span class="badge badge-pill badge-danger">Danger</span>
-  <span class="badge badge-pill badge-warning">Warning</span>
-  <span class="badge badge-pill badge-info">Info</span>
-  <span class="badge badge-pill badge-light">Light</span>
-  <span class="badge badge-pill badge-dark">Dark</span>
+  <h2>Simple Collapsible</h2>
+  <p>Click on the button to toggle between showing and hiding content.</p>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
 </div>
 
 </body>
