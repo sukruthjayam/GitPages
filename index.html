@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
@@ -9,31 +9,59 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="height:1500px">
 
-<div class="container mt-3">
-  <h2>Filter Anything</h2>
-  <p>Type something in the input field to search for a specific text inside the div element with id="myDIV":</p>
-  <input class="form-control" id="myInput" type="text" placeholder="Search..">
-  <div id="myDIV" class="mt-3">
-    <p>I am a paragraph.</p>
-    <div>I am a div element inside div.</div>
-    <button class="btn">I am a button</button>
-    <button class="btn btn-info">Another button</button>
-    <p>Another paragraph.</p>
+    <!--Header-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">PowerBI Metrics Platform Summary</a>
+  <ul class="navbar-nav">
+    <li class="nav-item" style="padding-left: 20px;">
+        <div class="dropdown">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+              Report Category
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+  </ul>
+</nav>
+<div class="container" style="margin-top: 80px;">
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+    <div id="demo" class="collapse">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
   </div>
-</div>
-
-<script>
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myDIV *").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
-
+<!--Footer-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom justify-content-center">
+<a class="navbar-brand" href="#">Maintained By Metrics Team</a>
+<!-- <ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="javascript:void(0)">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="javascript:void(0)">Link</a>
+  </li>
+</ul> -->
+</nav>
 </body>
 </html>
+
+
